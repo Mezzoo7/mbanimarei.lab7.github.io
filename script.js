@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
 
-    // Optionally, show an alert as well
+    // Optional: show an alert
     alert(text);
 
-    // Display the text in the "Show results here" area
+    // Display text below
     output.textContent = text;
   });
 });
