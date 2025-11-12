@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const button = document.getElementById("alertButton");
-  const input = document.getElementById("userInput");
-  const headline = document.getElementById("headline");
+  const button = document.getElementById("entrybutton");
+  const input = document.getElementById("entryinput");
+  const output = document.getElementById("textoutput");
 
   button.addEventListener("click", function() {
     const text = input.value.trim();
@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
 
-    // Replace "YourName" with your actual name
-    alert("YourName: " + text);
+    // Optionally, show an alert as well
+    alert(text);
 
-    headline.textContent = text;
+    // Display the text in the "Show results here" area
+    output.textContent = text;
   });
 });
